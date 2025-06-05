@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKM Music - Connect With Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5e6; /* Beige background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 400px;
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: #1e3a8a; /* Dark blue */
+      color: #f5f5e6;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .review-card {
+      background-color: #ffffff;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .review-card a {
+      text-decoration: none;
+      color: #1e3a8a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .review-card a:hover {
+      transform: scale(1.05);
+    }
+
+    .review-card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .review-card p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .review-card .stars {
+      color: #ffd700; /* Gold for stars */
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 20px;
+      background-color: #e6e6d3; /* Light beige */
+    }
+
+    .grid a {
+      background-color: #1e3a8a;
+      color: #f5f5e6;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .grid a:hover {
+      background-color: #2563eb; /* Lighter blue on hover */
+      transform: scale(1.05);
+    }
+
+    .grid i {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        margin: 10px;
+      }
+
+      .header h1 {
+        font-size: 1.5rem;
+      }
+
+      .review-card {
+        margin: 15px;
+        padding: 15px;
+      }
+
+      .review-card img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .review-card p {
+        font-size: 1rem;
+      }
+
+      .review-card .stars {
+        font-size: 1rem;
+      }
+
+      .grid a {
+        font-size: 0.8rem;
+        padding: 15px;
+      }
+
+      .grid i {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>AKM Music</h1>
+      <p>Connect With Us!</p>
+    </div>
+    <div class="review-card">
+      <a href="https://g.page/r/Ced_hTFllkaOEAI/review" target="_blank">
+        <img src="Logo.ico" alt="AKM Music Logo">
+        <p>Leave a Review</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </a>
+    </div>
+    <div class="grid">
+      <a href="https://www.facebook.com/akmmusiccenter" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/akm.music" target="_blank">
+        <i class="fab fa-instagram"></i>
+        Instagram
+      </a>
+      <a href="https://www.akm-music.com" target="_blank">
+        <i class="fas fa-globe"></i>
+        Website
+      </a>
+      <a href="https://wa.me/97126219929" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+  <script>
+    // Add click animation feedback
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function() {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = 'scale(1)';
+        }, 100);
+      });
+    });
+  </script>
+</body>
+</html>
